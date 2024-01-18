@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta description="">
+    <meta property="og:url" content="https://yohanmuze.github.io/ProjetOC-P12/">
+    <meta property="og:site_name" content="Yohan Muzé - Web Developer Front-end">
+    <meta property="og:description"
+        content="Web Developer Front-end passionné de programmation qui s'intéresse particulièrement au Green IT et l'accessibilité">
+    <meta name="description"
+        content="Web Developer Front-end passionné de programmation qui s'intéresse particulièrement au Green IT et l'accessibilité">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yohan Muzé - Web Developer Front-end</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+    <script src="src/index.js" defer></script>
+</head>
+
+<body id="accueil">
+    <header class="header">
+        <div class="header_logo">
+            <a href="#accueil"><img src="./public/logo.png" alt="Yohan Muzé, web developer"></a>
+        </div>
+        <nav class="nav">
+            <ul class="nav_ul">
+                <li><a href="#skills" class="nav-links"
+                        aria-describedby="lien vers la rubrique : mes compétences">Compétences</a></li>
+                <li><a href="#projets" class="nav-links"
+                        aria-describedby="lien vers la rubrique : mes projets">Projets</a></li>
+                <li><a href="./src/assets/Yohan Muzé - CV.pdf" class="nav-links" target="_blank"
+                        aria-describedby="lien vers mon CV au format pdf">Mon CV</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="hero">
+        <div class="hero_layout">
+            <img src="src/assets/images/hero-content.png" aria-hidden="true">
+            <div class="hero_content">
+                <h1>Développeur Web Front-end passionné de programmation qui s'intéresse particulièrement au Green IT et
+                    à l'accessibilité.</h1>
+                <p>Formation de Developpeur Web Front-end chez OpenClassrooms</p>
+            </div>
+        </div>
+        <div class="hero_pic">
+            <img src="src/assets/images/developer.png"
+                alt="dessin d'un personnage avec une capuche devant son ordinateur">
+            <figcaption>(presque) moi</figcaption>
+            <div class="btn-icons">
+                <a href="https://www.linkedin.com/in/yohan-m-7521442a1" target="_blank"><img
+                        src="public/LinkedIn_Logo.svg.png" alt="lien vers ma page Linkedin"></a>
+            </div>
+            <div class="hero_content_links">
+                <div class="btn-icons">
+                    <a href="https://github.com/YohanMuze" target="_blank"><img src="public/github.png"
+                            alt="lien vers mon github"></a>
+                </div>
+                <div class="btn-icons">
+                    <a href="mailto:yohan.m.dev@gmail.com" target="_blank"><img src="public/gmail.png"
+                            alt="lien vers mon adresse gmail"></a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <aside class="skills_wrapper" id="skills">
+        <article class="skills">
+            <h2>Mes compétences</h2>
+            <div class="skills_box">
+                <div class="skills_first">
+                    <img src="public/react.png" alt="logo de React">
+                    <img src="public/redux.png" alt="logo de Redux">
+                    <img src="public/js.png" alt="logo du Javascript">
+                    <img src="public/html.png" alt="logo du HTML5 ">
+                    <img src="public/css.png" alt="logo du CSS3">
+                    <img src="public/sass.png" alt="logo de Sass">
+                </div>
+                <div class="skills_collapse">
+                </div>
+            </div>
+        </article>
+    </aside>
+    <aside>
+        <article class="gallery" id="projets">
+            <h2>Certains de mes projets</h2>
+            <dialog id="modal-article" class="modal">
+                <div class="modal-wrapper"></div>
+            </dialog>
+            <div class="gallery_box">
+
+            </div>
+        </article>
+    </aside>
+
+    <footer class="footer">
+        <div class="footer_links">
+            <div class="btn-icons">
+                <a href="https://www.linkedin.com/in/yohan-m-7521442a1" target="_blank"><img
+                        src="public/LinkedIn_Logo.svg.png" alt="lien vers ma page Linkedin"></a>
+            </div>
+            <div class="btn-icons">
+                <a href="https://github.com/YohanMuze" target="_blank"><img src="public/github.png"
+                        alt="lien vers mon github"></a>
+            </div>
+            <div class="btn-icons">
+                <a href="mailto:yohan.m.dev@gmail.com" target="_blank"><img src="public/gmail.png"
+                        alt="lien vers mon github"></a>
+            </div>
+        </div>
+        <div class="footer_arrow-up">
+            <a href="#accueil"><img src="./public/icons-double-up.png"
+                    alt="bouton pour remonter en haut de la page"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

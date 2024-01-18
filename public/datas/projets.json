@@ -1,0 +1,73 @@
+[
+    {
+        "id": "1",
+        "title": "Kasa",
+        "cover": "./src/assets/images/kasa.png",
+        "mission": "Développer l'interface React (routage inclu) d'une plateforme de location mobilière entre particuliers.",
+        "tags": [
+            "./public/react.png",
+            "./public/sass.png",
+            "./public/html.png",
+            "./public/css.png",
+            "./public/figma.png"
+            ],
+        "github": "https://github.com/YohanMuze/ProjetOC-P8",
+        "website": "https://kasa-blond.vercel.app/"
+    },
+    {
+        "id": "2",
+        "title": "Portfolio - Sophie Bluel",
+        "cover": "./src/assets/images/sophiebluel.png",
+        "mission": "Transformer un portfolio statique one-page en un site dynamique avec page de connexion, gallerrie dynamique et modale d'ajout/suppression de projet.",
+        "tags": [
+            "./public/js.png",
+            "./public/html.png",
+            "./public/css.png",
+            "./public/figma.png"
+            ],
+        "github": "https://github.com/YohanMuze/ProjetOC-P6",
+        "website": ""
+    },
+    {
+        "id": "3",
+        "title": "Argent Bank",
+        "cover": "./src/assets/images/argentbank.png",
+        "mission": "Transformer un site statique en application React et ajouter Redux pour une gestion globale de l'état",
+        "tags": [
+            "./public/react.png",
+            "./public/redux.png",
+            "./public/html.png",
+            "./public/css.png",
+            "./public/figma.png"
+            ],
+        "github": "https://github.com/YohanMuze/ProjetOC-P11",
+        "website": ""
+    },
+    {
+        "id": "4",
+        "title": "Ohmyfood",
+        "cover": "./src/assets/images/ohmyfood.png",
+        "mission": "Développer un site en mobile first répertiorants des restaurants avec leurs menus et permettant aux clients de réserver en commandant directement son menu.",
+        "tags": [
+            "./public/html.png",
+            "./public/css.png",
+            "./public/sass.png",
+            "./public/figma.png"
+            ],
+        "github": "https://github.com/YohanMuze/ProjetOC-P4",
+        "website": "https://yohanmuze.github.io/ProjetOC-P4/"
+    },
+    {
+        "id": "5",
+        "title": "Booki",
+        "cover": "./src/assets/images/booki.png",
+        "mission": "Développer l'interface d'un site de recherche d'hébergments et d'activités par ville en s'appuyant sur les maquettes du designer.",
+        "tags": [
+            "./public/html.png",
+            "./public/css.png",
+            "./public/figma.png"
+            ],
+        "github": "https://github.com/YohanMuze/OC-P3-Booki",
+        "website": "https://yohanmuze.github.io/OC-P3-Booki/"
+    }
+]
