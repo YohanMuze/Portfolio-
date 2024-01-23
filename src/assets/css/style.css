@@ -9,13 +9,14 @@
 body {
   background-color: var(--green-1);
   width: 100%;
+  color: var(--green-12);
 }
 
 a, ul, li, button {
   display: block;
   text-decoration: none;
   list-style-type: none;
-  color: black;
+  color: var(--green-12);
   padding-left: 0;
 }
 
@@ -307,6 +308,8 @@ h1, .hero_content p {
   height: 100%;
   width: 40%;
   padding: 2.5rem;
+  color: var(--green-12);
+  background-color: var(--green-1);
 }
 
 .modal-wrapper_header {
