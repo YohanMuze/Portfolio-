@@ -391,6 +391,7 @@ h1, .hero_content p {
 
 .footer_arrow-up {
   align-self: center;
+  margin-right: 2rem;
 }
 
 /************* Responsive ***************/
@@ -492,6 +493,9 @@ h1, .hero_content p {
     flex-direction: column;
     margin-top: 2rem;
     gap: 1rem;
+  }
+  .footer_arrow-up {
+    margin-right: 0;
   }
   .modal-wrapper_info_content {
     gap: 2rem;
