@@ -106,7 +106,7 @@ function fillModal(article) {
         </div>
         <div class="modal-wrapper_right">
             <div class="modal-wrapper_header">
-                <img tabindex="0" class="modal-wrapper_header_icon" src="./public/close_cross.png">
+                <img tabindex="0" class="modal-wrapper_header_icon" src="./public/close_cross-dark.png">
             </div>
             <div class="modal-wrapper_info">
                 <h2 class="modal-wrapper_info_h">${article[0].title}</h2>
