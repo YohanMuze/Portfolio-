@@ -1,6 +1,46 @@
 const body = document.body;
 const modal = document.querySelector("#modal-article");
 
+document.querySelector(".btn-toggle-mode").addEventListener("click", toggleMode);
+
+/************* Dark-mode functions ***************/
+function toggleMode() {
+    toggleClass(body, "light", "dark");
+    togglePng();
+}
+
+function toggleClass(el, prev, next) {
+    if (el.className === prev) {
+        el.className = next;
+    }
+    else {
+        el.className = prev;
+    }
+}
+
+function toggleImg() {
+    if (body.className === "light") {
+        document.querySelector("#logo").src = "./public/logo-light.png";
+    }
+    else if (body.className === "dark") {
+        document.querySelector("#logo").src = "./public/logo-dark.png";
+    }
+}
+
+function togglePng() {
+    if (body.className === "light") {
+        let source = document.querySelector("#logo").src
+        let result = source.replace(new RegExp("dark"), "light");
+        document.querySelector("#logo").src = result;
+    }
+    else if (body.className === "dark") {
+        let source = document.querySelector("#logo").src
+        let result = source.replace(new RegExp("light"), "dark");
+        document.querySelector("#logo").src = result;
+    }
+}
+
+
 /********* Gallery display functions : **********/
 function clearGallery(selector) {
     document.querySelector(selector)
@@ -74,8 +114,7 @@ function addLink(datas, location) {
 }
 
 
-
-    /********* Modal's functions *********/
+/******************* Modal's functions *********************/
 
 function openModal(e) {
     e.preventDefault();
