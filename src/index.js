@@ -6,7 +6,15 @@ document.querySelector(".btn-toggle-mode").addEventListener("click", toggleMode)
 /************* Dark-mode functions ***************/
 function toggleMode() {
     toggleClass(body, "light", "dark");
-    togglePng();
+    toggleImg("#logo");
+    toggleImg("#btn-toggle-mode");
+    toggleImg("#hero");
+    toggleImg("#linkedin");
+    toggleImg("#git");
+    toggleImg("#linkedin-footer");
+    toggleImg("#git-footer");
+    toggleImg("#arrow-up");
+    toggleImg("#close-arrow");
 }
 
 function toggleClass(el, prev, next) {
@@ -18,25 +26,16 @@ function toggleClass(el, prev, next) {
     }
 }
 
-function toggleImg() {
+function toggleImg(el,) {
     if (body.className === "light") {
-        document.querySelector("#logo").src = "./public/logo-light.png";
-    }
-    else if (body.className === "dark") {
-        document.querySelector("#logo").src = "./public/logo-dark.png";
-    }
-}
-
-function togglePng() {
-    if (body.className === "light") {
-        let source = document.querySelector("#logo").src
+        let source = document.querySelector(el).src
         let result = source.replace(new RegExp("dark"), "light");
-        document.querySelector("#logo").src = result;
+        document.querySelector(el).src = result;
     }
     else if (body.className === "dark") {
-        let source = document.querySelector("#logo").src
+        let source = document.querySelector(el).src
         let result = source.replace(new RegExp("light"), "dark");
-        document.querySelector("#logo").src = result;
+        document.querySelector(el).src = result;
     }
 }
 
@@ -145,7 +144,7 @@ function fillModal(article) {
         </div>
         <div class="modal-wrapper_right">
             <div class="modal-wrapper_header">
-                <img tabindex="0" class="modal-wrapper_header_icon" src="./public/close_cross-dark.png">
+                <img id="close-arrow" tabindex="0" class="modal-wrapper_header_icon" src="./public/close_cross-dark.png">
             </div>
             <div class="modal-wrapper_info">
                 <h2 class="modal-wrapper_info_h">${article[0].title}</h2>
@@ -168,6 +167,8 @@ function fillModal(article) {
     </div>
     `;
     
+    toggleImg("#close-arrow");
+
     let tags = article[0].tags;
     for (let i = 0; i < tags.length; i++) {
         let string = tags[i].replace(new RegExp("[^(a-zA-Z)]", "g"), '');
