@@ -39,7 +39,7 @@ img {
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 5rem;
   width: 100%;
   background-color: var(--green-2);
@@ -100,6 +100,23 @@ img {
   height: 100%;
   width: 100%;
   padding: 0.5rem;
+}
+
+.btn-togle-mode {
+  align-self: center;
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--green-4);
+  border: 1px solid var(--green-6);
+  padding: 0;
+}
+
+.btn-togle-mode img {
+  height: 85%;
+  width: auto;
 }
 
 .hero {
@@ -164,7 +181,7 @@ h1, .hero_content p {
   height: 100%;
 }
 
-.btn-icons:hover, .nav_ul li:hover, .modal-link:hover{
+.btn-icons:hover, .nav_ul li:hover, .modal-link:hover, .btn-togle-mode:hover {
   background-color: var(--green-7);
   cursor: pointer;
 }
