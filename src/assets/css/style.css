@@ -102,7 +102,7 @@ img {
   padding: 0.5rem;
 }
 
-.btn-togle-mode {
+.btn-toggle-mode {
   align-self: center;
   display: flex;
   height: 2.5rem;
@@ -114,7 +114,7 @@ img {
   padding: 0;
 }
 
-.btn-togle-mode img {
+.btn-toggle-mode img {
   height: 85%;
   width: auto;
 }
