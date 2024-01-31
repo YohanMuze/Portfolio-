@@ -181,7 +181,7 @@ h1, .hero_content p {
   height: 100%;
 }
 
-.btn-icons:hover, .nav_ul li:hover, .modal-link:hover, .btn-togle-mode:hover {
+.btn-icons:hover, .nav_ul li:hover, .modal-link:hover, .btn-toggle-mode:hover {
   background-color: var(--green-7);
   cursor: pointer;
 }

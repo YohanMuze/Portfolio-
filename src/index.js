@@ -1,7 +1,7 @@
 const body = document.body;
 const modal = document.querySelector("#modal-article");
 
-document.querySelector(".btn-toggle-mode").addEventListener("click", toggleMode);
+
 
 /************* Dark-mode functions ***************/
 function toggleMode() {
@@ -193,3 +193,5 @@ function fillModal(article) {
 }
 
 displayGallery();
+
+document.querySelector(".btn-toggle-mode").addEventListener("click", toggleMode);
