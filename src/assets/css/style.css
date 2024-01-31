@@ -443,6 +443,11 @@ h1, .hero_content p {
   .nav-links {
     padding: 1.5rem;
   }
+  .btn-toggle-mode {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+  }
   .hero {
     flex-direction: column;
     gap: 5rem;
@@ -480,6 +485,10 @@ h1, .hero_content p {
   }
   .nav-links{
     padding: 1rem;
+  }
+  .btn-toggle-mode {
+    width: 2rem;
+    height: 2rem;
   }
   .hero_layout {
     width: 100%;
