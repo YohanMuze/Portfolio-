@@ -19,10 +19,10 @@
     <script src="src/index.js" defer></script>
 </head>
 
-<body id="accueil">
+<body id="accueil" class="light">
     <header class="header">
         <div class="header_logo">
-            <a href="#accueil"><img src="./public/logo.png" alt="Yohan Muzé, web developer"></a>
+            <a href="#accueil"><img id="logo" src="./public/logo-light.png" alt="Yohan Muzé, web developer"></a>
         </div>
         <nav class="nav">
             <ul class="nav_ul">
@@ -34,14 +34,15 @@
                         aria-describedby="lien vers mon CV au format pdf">Mon CV</a></li>
             </ul>
         </nav>
+        <button class="btn-toggle-mode"><img id="btn-toggle-mode" src="./public/light-mode.png"></button>
     </header>
     <main class="hero">
         <div class="hero_layout">
-            <img src="src/assets/images/hero-content.png" aria-hidden="true">
+            <img id="hero" src="src/assets/images/hero-content-light.png" aria-hidden="true">
             <div class="hero_content">
-                <h1>Développeur Web Front-end passionné de programmation qui s'intéresse particulièrement au Green IT et
-                    à l'accessibilité.</h1>
-                <p>Formation de Developpeur Web Front-end chez OpenClassrooms</p>
+                <h1>Développeur Web Front-end passionné de programmation qui s'intéresse particulièrement au
+                    <strong>Green IT</strong> et
+                    à l'<strong>accessibilité</strong>.</h1>
             </div>
         </div>
         <div class="hero_pic">
@@ -49,12 +50,12 @@
                 alt="dessin d'un personnage avec une capuche devant son ordinateur">
             <figcaption>(presque) moi</figcaption>
             <div class="btn-icons">
-                <a href="https://www.linkedin.com/in/yohan-m-7521442a1" target="_blank"><img
-                        src="public/LinkedIn_Logo.svg.png" alt="lien vers ma page Linkedin"></a>
+                <a href="https://www.linkedin.com/in/yohan-m-7521442a1" target="_blank"><img id="linkedin"
+                        src="public/LinkedIn_Logo-light.png" alt="lien vers ma page Linkedin"></a>
             </div>
             <div class="hero_content_links">
                 <div class="btn-icons">
-                    <a href="https://github.com/YohanMuze" target="_blank"><img src="public/github.png"
+                    <a href="https://github.com/YohanMuze" target="_blank"><img id="git" src="public/github-light.png"
                             alt="lien vers mon github"></a>
                 </div>
                 <div class="btn-icons">
@@ -97,12 +98,12 @@
     <footer class="footer">
         <div class="footer_links">
             <div class="btn-icons">
-                <a href="https://www.linkedin.com/in/yohan-m-7521442a1" target="_blank"><img
-                        src="public/LinkedIn_Logo.svg.png" alt="lien vers ma page Linkedin"></a>
+                <a href="https://www.linkedin.com/in/yohan-m-7521442a1" target="_blank"><img id="linkedin-footer"
+                        src="public/LinkedIn_Logo-light.png" alt="lien vers ma page Linkedin"></a>
             </div>
             <div class="btn-icons">
-                <a href="https://github.com/YohanMuze" target="_blank"><img src="public/github.png"
-                        alt="lien vers mon github"></a>
+                <a href="https://github.com/YohanMuze" target="_blank"><img id="git-footer"
+                        src="public/github-light.png" alt="lien vers mon github"></a>
             </div>
             <div class="btn-icons">
                 <a href="mailto:yohan.m.dev@gmail.com" target="_blank"><img src="public/gmail.png"
@@ -110,7 +111,7 @@
             </div>
         </div>
         <div class="footer_arrow-up">
-            <a href="#accueil"><img src="./public/icons-double-up.png"
+            <a href="#accueil"><img id="arrow-up" src="./public/icons-double-up-light.png"
                     alt="bouton pour remonter en haut de la page"></a>
         </div>
     </footer>

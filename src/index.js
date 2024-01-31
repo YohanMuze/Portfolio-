@@ -1,6 +1,45 @@
 const body = document.body;
 const modal = document.querySelector("#modal-article");
 
+
+
+/************* Dark-mode functions ***************/
+function toggleMode() {
+    toggleClass(body, "light", "dark");
+    toggleImg("#logo");
+    toggleImg("#btn-toggle-mode");
+    toggleImg("#hero");
+    toggleImg("#linkedin");
+    toggleImg("#git");
+    toggleImg("#linkedin-footer");
+    toggleImg("#git-footer");
+    toggleImg("#arrow-up");
+    toggleImg("#close-arrow");
+}
+
+function toggleClass(el, prev, next) {
+    if (el.className === prev) {
+        el.className = next;
+    }
+    else {
+        el.className = prev;
+    }
+}
+
+function toggleImg(el,) {
+    if (body.className === "light") {
+        let source = document.querySelector(el).src
+        let result = source.replace(new RegExp("dark"), "light");
+        document.querySelector(el).src = result;
+    }
+    else if (body.className === "dark") {
+        let source = document.querySelector(el).src
+        let result = source.replace(new RegExp("light"), "dark");
+        document.querySelector(el).src = result;
+    }
+}
+
+
 /********* Gallery display functions : **********/
 function clearGallery(selector) {
     document.querySelector(selector)
@@ -74,8 +113,7 @@ function addLink(datas, location) {
 }
 
 
-
-    /********* Modal's functions *********/
+/******************* Modal's functions *********************/
 
 function openModal(e) {
     e.preventDefault();
@@ -106,7 +144,7 @@ function fillModal(article) {
         </div>
         <div class="modal-wrapper_right">
             <div class="modal-wrapper_header">
-                <img tabindex="0" class="modal-wrapper_header_icon" src="./public/close_cross.png">
+                <img id="close-arrow" tabindex="0" class="modal-wrapper_header_icon" src="./public/close_cross-dark.png">
             </div>
             <div class="modal-wrapper_info">
                 <h2 class="modal-wrapper_info_h">${article[0].title}</h2>
@@ -129,6 +167,8 @@ function fillModal(article) {
     </div>
     `;
     
+    toggleImg("#close-arrow");
+
     let tags = article[0].tags;
     for (let i = 0; i < tags.length; i++) {
         let string = tags[i].replace(new RegExp("[^(a-zA-Z)]", "g"), '');
@@ -153,3 +193,5 @@ function fillModal(article) {
 }
 
 displayGallery();
+
+document.querySelector(".btn-toggle-mode").addEventListener("click", toggleMode);

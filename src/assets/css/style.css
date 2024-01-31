@@ -9,13 +9,14 @@
 body {
   background-color: var(--green-1);
   width: 100%;
+  color: var(--green-12);
 }
 
 a, ul, li, button {
   display: block;
   text-decoration: none;
   list-style-type: none;
-  color: black;
+  color: var(--green-12);
   padding-left: 0;
 }
 
@@ -38,7 +39,7 @@ img {
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 5rem;
   width: 100%;
   background-color: var(--green-2);
@@ -51,13 +52,12 @@ img {
 .header_logo {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 20%;
   height: 100%;
 }
 
 .header_logo a {
-  height: 70%;
+  height: 100%;
 }
 
 .nav {
@@ -100,6 +100,23 @@ img {
   height: 100%;
   width: 100%;
   padding: 0.5rem;
+}
+
+.btn-toggle-mode {
+  align-self: center;
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--green-4);
+  border: 1px solid var(--green-6);
+  padding: 0;
+}
+
+.btn-toggle-mode img {
+  height: 85%;
+  width: auto;
 }
 
 .hero {
@@ -164,7 +181,7 @@ h1, .hero_content p {
   height: 100%;
 }
 
-.btn-icons:hover, .nav_ul li:hover, .modal-link:hover{
+.btn-icons:hover, .nav_ul li:hover, .modal-link:hover, .btn-toggle-mode:hover {
   background-color: var(--green-7);
   cursor: pointer;
 }
@@ -307,6 +324,8 @@ h1, .hero_content p {
   height: 100%;
   width: 40%;
   padding: 2.5rem;
+  color: var(--green-12);
+  background-color: var(--green-1);
 }
 
 .modal-wrapper_header {
@@ -388,6 +407,7 @@ h1, .hero_content p {
 
 .footer_arrow-up {
   align-self: center;
+  margin-right: 2rem;
 }
 
 /************* Responsive ***************/
@@ -489,6 +509,9 @@ h1, .hero_content p {
     flex-direction: column;
     margin-top: 2rem;
     gap: 1rem;
+  }
+  .footer_arrow-up {
+    margin-right: 0;
   }
   .modal-wrapper_info_content {
     gap: 2rem;
