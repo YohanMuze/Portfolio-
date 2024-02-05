@@ -3,7 +3,7 @@
         "id": "1",
         "title": "Kasa",
         "cover": "./src/assets/images/kasa.png",
-        "mission": "Développer l'interface React (routage inclu) d'une plateforme de location mobilière entre particuliers.",
+        "mission": "Développer l'interface React (routage inclus) d'une plateforme de location mobilière entre particuliers.",
         "tags": [
             "./public/react.png",
             "./public/sass.png",
@@ -18,7 +18,7 @@
         "id": "2",
         "title": "Portfolio - Sophie Bluel",
         "cover": "./src/assets/images/sophiebluel.png",
-        "mission": "Transformer un portfolio statique one-page en un site dynamique avec page de connexion, gallerrie dynamique et modale d'ajout/suppression de projet.",
+        "mission": "Transformer un portfolio statique one-page en un site dynamique avec page de connexion, gallerie dynamique et modale d'ajout/suppression de projet.",
         "tags": [
             "./public/js.png",
             "./public/html.png",
@@ -47,7 +47,7 @@
         "id": "4",
         "title": "Ohmyfood",
         "cover": "./src/assets/images/ohmyfood.png",
-        "mission": "Développer un site en mobile first répertiorants des restaurants avec leurs menus et permettant aux clients de réserver en commandant directement son menu.",
+        "mission": "Développer un site en mobile first répertoriant des restaurants avec leurs menus et permettant aux clients de réserver en commandant directement son menu.",
         "tags": [
             "./public/html.png",
             "./public/css.png",
@@ -61,7 +61,7 @@
         "id": "5",
         "title": "Booki",
         "cover": "./src/assets/images/booki.png",
-        "mission": "Développer l'interface d'un site de recherche d'hébergments et d'activités par ville en s'appuyant sur les maquettes du designer.",
+        "mission": "Développer l'interface d'un site de recherche d'hébergements et d'activités par ville en s'appuyant sur les maquettes du designer.",
         "tags": [
             "./public/html.png",
             "./public/css.png",
